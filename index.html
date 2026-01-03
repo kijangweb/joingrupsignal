@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAUUSD Signal - Premium Edition</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #FFD700;
+            --dark-bg: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.4); }
+            50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.4); }
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: var(--card-bg);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+        }
+
+        .diamond {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px var(--gold));
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+            color: var(--gold-light);
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .benefits {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .benefit-item {
+            margin-bottom: 12px;
+            display: flex;
+            font-size: 0.85rem;
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+            line-height: 1.4;
+        }
+
+        /* Staggered animation for list items */
+        .benefit-item:nth-child(2) { animation-delay: 0.2s; }
+        .benefit-item:nth-child(3) { animation-delay: 0.4s; }
+        .benefit-item:nth-child(4) { animation-delay: 0.6s; }
+        .benefit-item:nth-child(5) { animation-delay: 0.8s; }
+        .benefit-item:nth-child(6) { animation-delay: 1.0s; }
+
+        .benefit-item span { margin-right: 12px; }
+
+        .promo-box {
+            background: linear-gradient(135deg, #D4AF37, #8B6B0E);
+            color: #000;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            animation: pulseGlow 2s infinite;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: #000;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s;
+            animation: floating 3s ease-in-out infinite;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+            animation-play-state: paused;
+        }
+
+        .arrow-down {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="diamond">💎</div>
+    <h1>STANDAR BARU<br>TRADING XAUUSD</h1>
+    
+    <p class="subtitle">
+        Membangun konsistensi dengan sistem eksekusi yang disiplin dan manajemen risiko yang transparan.
+    </p>
+
+    <div class="benefits">
+        <div class="benefit-item" style="color: var(--gold-light); font-weight: bold; margin-bottom: 15px;">🏆 KEUNTUNGAN MEMBER:</div>
+        <div class="benefit-item"><span>⚖️</span> Trade Management — (7 Level Protection).</div>
+        <div class="benefit-item"><span>✅</span> Parameter Baku — RRR Terukur (SL/TP Jelas).</div>
+        <div class="benefit-item"><span>✅</span> Eksekusi Terencana — Sinyal Pending Order.</div>
+        <div class="benefit-item"><span>✅</span> Pendampingan MM — Konsultasi Modal.</div>
+        <div class="benefit-item"><span>✅</span> Akuntabilitas — Laporan Performa Rutin.</div>
+    </div>
+
+    <div class="promo-box">
+        🔥 INVESTASI: Rp 50.000 / BULAN 🔥
+    </div>
+
+    <p style="font-size: 0.8rem; letter-spacing: 1px; color: #888;">💳 GABUNG & AKSES OTOMATIS:</p>
+    <div class="arrow-down">↓↓↓</div>
+    
+    <a href="https://forexemas.myr.id/m/signal-xauusd-forex-emas" class="cta-button">KLIK UNTUK JOIN</a>
+</div>
+
+</body>
+</html>
