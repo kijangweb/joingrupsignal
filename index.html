@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XAUUSD Signal - Premium Edition</title>
+    <title>XAUUSD & Crypto - Premium Edition</title>
     <style>
         :root {
             --gold: #D4AF37;
@@ -12,6 +12,7 @@
             --card-bg: #1a1a1a;
             --text-color: #ffffff;
             --success: #00FF7F;
+            --crypto-orange: #F7931A;
         }
 
         /* ANIMASI */
@@ -24,6 +25,12 @@
             0% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.4); transform: scale(1); }
             50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.8); transform: scale(1.03); }
             100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.4); transform: scale(1); }
+        }
+
+        @keyframes pulseGlowCrypto {
+            0% { box-shadow: 0 0 5px rgba(247, 147, 26, 0.4); transform: scale(1); }
+            50% { box-shadow: 0 0 20px rgba(247, 147, 26, 0.8); transform: scale(1.03); }
+            100% { box-shadow: 0 0 5px rgba(247, 147, 26, 0.4); transform: scale(1); }
         }
 
         @keyframes pulseGlowBox {
@@ -70,7 +77,6 @@
             animation: floating 3s ease-in-out infinite;
         }
 
-        /* JUDUL AWAL MULA */
         h1 {
             font-size: 1.4rem;
             letter-spacing: 2px;
@@ -80,7 +86,6 @@
             line-height: 1.2;
         }
 
-        /* SUBJUDUL AWAL MULA */
         .subtitle {
             font-size: 0.9rem;
             color: #aaa;
@@ -148,23 +153,23 @@
         .divider::before, .divider::after {
             content: '';
             flex: 1;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .divider:not(:empty)::before { margin-right: 15px; }
         .divider:not(:empty)::after { margin-left: 15px; }
 
         .indicator-card {
-            background: rgba(212, 175, 55, 0.03);
-            border: 1px dashed var(--gold);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
             border-radius: 20px;
             padding: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .btn {
             display: block;
-            padding: 18px 35px;
+            padding: 18px 25px;
             text-decoration: none;
             font-weight: bold;
             font-size: 0.9rem;
@@ -185,6 +190,13 @@
             border: 2px solid var(--gold);
             color: var(--gold);
             animation: pulseGlowButton 2s infinite;
+        }
+
+        .btn-crypto {
+            background-color: transparent;
+            border: 2px solid var(--crypto-orange);
+            color: var(--crypto-orange);
+            animation: pulseGlowCrypto 2s infinite;
         }
 
         .btn:hover {
@@ -243,13 +255,20 @@
         <a href="https://forexemas.myr.id/m/signal-xauusd-forex-emas" class="btn btn-gold">KLIK UNTUK JOIN</a>
     </div>
 
-    <div class="divider">Premium Trading Tool</div>
+    <div class="divider">Premium Trading Tools</div>
 
     <div class="indicator-card">
-        <span style="font-size: 0.65rem; color: #aaa; text-transform: uppercase; display: block; margin-bottom: 8px;">TradingView Tools</span>
+        <span style="font-size: 0.65rem; color: #aaa; text-transform: uppercase; display: block; margin-bottom: 8px;">XAUUSD TradingView Tool</span>
         <div style="font-weight: 800; color: var(--gold-light); font-size: 1rem; margin-bottom: 5px;">🛠️ 3EMA STRICT INDICATOR</div>
         <p style="font-size: 0.75rem; color: var(--success); margin: 0 0 15px 0; font-weight: bold;">✨ Update Selamanya / Lifetime Access</p>
         <a href="http://lynk.id/bongkaruncle/v2kd93vvjdz9" class="btn btn-pulse">DAPATKAN INDIKATOR</a>
+    </div>
+
+    <div class="indicator-card" style="border-color: rgba(247, 147, 26, 0.4);">
+        <span style="font-size: 0.65rem; color: #aaa; text-transform: uppercase; display: block; margin-bottom: 8px;">Bitcoin & Altcoin Cycle</span>
+        <div style="font-weight: 800; color: var(--crypto-orange); font-size: 1rem; margin-bottom: 5px;">📊 SIKLUS HALVING PRO - V6.0</div>
+        <p style="font-size: 0.75rem; color: var(--success); margin: 0 0 15px 0; font-weight: bold;">✨ Update Selamanya / Hybrid System</p>
+        <a href="http://lynk.id/bongkaruncle/prvdl8w67nx2" class="btn btn-crypto">BELI SIKLUS HALVING</a>
     </div>
 
     <div class="social-footer">
