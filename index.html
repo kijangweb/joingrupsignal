@@ -13,6 +13,7 @@
             --text-color: #ffffff;
             --success: #00FF7F;
             --crypto-orange: #F7931A;
+            --pivot-blue: #00ffff;
         }
 
         /* ANIMASI */
@@ -31,6 +32,12 @@
             0% { box-shadow: 0 0 5px rgba(247, 147, 26, 0.4); transform: scale(1); }
             50% { box-shadow: 0 0 20px rgba(247, 147, 26, 0.8); transform: scale(1.03); }
             100% { box-shadow: 0 0 5px rgba(247, 147, 26, 0.4); transform: scale(1); }
+        }
+
+        @keyframes pulseGlowPivot {
+            0% { box-shadow: 0 0 5px rgba(0, 255, 255, 0.2); transform: scale(1); }
+            50% { box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); transform: scale(1.03); }
+            100% { box-shadow: 0 0 5px rgba(0, 255, 255, 0.2); transform: scale(1); }
         }
 
         @keyframes pulseGlowBox {
@@ -199,6 +206,13 @@
             animation: pulseGlowCrypto 2s infinite;
         }
 
+        .btn-pivot {
+            background-color: transparent;
+            border: 2px solid var(--pivot-blue);
+            color: var(--pivot-blue);
+            animation: pulseGlowPivot 2s infinite;
+        }
+
         .btn:hover {
             transform: scale(1.05) !important;
             background-color: #fff;
@@ -257,6 +271,13 @@
 
     <div class="divider">Premium Trading Tools</div>
 
+    <div class="indicator-card" style="border-color: rgba(0, 255, 255, 0.4);">
+        <span style="font-size: 0.65rem; color: #aaa; text-transform: uppercase; display: block; margin-bottom: 8px;">Professional Dashboard</span>
+        <div style="font-weight: 800; color: var(--pivot-blue); font-size: 1rem; margin-bottom: 5px;">📊 PIVOT-100 v13.9.1 PRO</div>
+        <p style="font-size: 0.75rem; color: var(--success); margin: 0 0 15px 0; font-weight: bold;">✨ Update Selamanya / Pro Scalper Tool</p>
+        <a href="http://lynk.id/bongkaruncle/4nz2wpkz1eqr" class="btn btn-pivot">DAPATKAN PIVOT-100</a>
+    </div>
+
     <div class="indicator-card">
         <span style="font-size: 0.65rem; color: #aaa; text-transform: uppercase; display: block; margin-bottom: 8px;">XAUUSD TradingView Tool</span>
         <div style="font-weight: 800; color: var(--gold-light); font-size: 1rem; margin-bottom: 5px;">🛠️ 3EMA STRICT INDICATOR</div>
@@ -283,7 +304,6 @@
 </div>
 
 <script>
-    // Script sederhana untuk mengambil tahun sekarang secara otomatis
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
